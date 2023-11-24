@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(233, 186, 186);
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Tenor Sans';
+    font-size: 3em;
+    color: rgb(51, 5, 51);
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Tenor Sans';
+    font-size: 1.5em;
+    color: rgb(36, 1, 22);
+
+}
+
+.imagem-animacao {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 50em;
+    height: 40em;
+    animation-duration: 1s;
+    animation-name: pulsando;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsando {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }  
+}
